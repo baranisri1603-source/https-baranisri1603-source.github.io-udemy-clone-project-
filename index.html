@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore popular online courses in development, design, business, and more."
+    />
+    <title>Udemy | Online Courses</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <p>Build a new skill today. Find a course that fits your goals.</p>
+      <a href="#courses">Explore courses <span aria-hidden="true">→</span></a>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="logo" href="index.html" aria-label="Udemy home">Udemy<span>.</span></a>
+        <a class="browse-link" href="#categories">Categories</a>
+        <form class="search-form" role="search" action="#courses">
+          <label class="visually-hidden" for="course-search">Search courses</label>
+          <input id="course-search" type="search" placeholder="Search for anything" />
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+        <div class="nav-links">
+          <a href="#teach">Teach on Udemy</a>
+          <a href="#login">Log in</a>
+          <a class="signup-button" href="#signup">Sign up</a>
+        </div>
+      </nav>
+    </header>
+    <nav class="category-menu" aria-label="Browse course categories">
+      <div class="container category-menu-inner">
+        <a href="#categories">Development</a>
+        <a href="#categories">Business</a>
+        <a href="#categories">Finance &amp; Accounting</a>
+        <a href="#categories">IT &amp; Software</a>
+        <a href="#categories">Design</a>
+        <a href="#categories">Marketing</a>
+        <a href="#categories">Personal Development</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Keep learning, keep growing</p>
+          <h1>Skills for your next <span>big step.</span></h1>
+          <p>
+            Learn practical skills from expert instructors. Explore thousands of courses
+            designed to help you do more of what you love.
+          </p>
+          <a class="button button-dark" href="#courses">Find your next course</a>
+        </div>
+        <div class="hero-art" role="img" aria-label="Colorful illustration of a person learning online">
+          <div class="art-sun"></div>
+          <div class="art-window"><span></span><span></span><span></span></div>
+          <div class="art-person">
+            <div class="person-head"></div>
+            <div class="person-body"></div>
+          </div>
+          <div class="art-book">LEARN<br />SOMETHING<br />NEW</div>
+          <div class="art-plant"><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section id="categories" class="section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Explore your interests</p>
+            <h2>Top categories</h2>
+          </div>
+          <a class="text-link" href="#courses">See all categories <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="category-list">
+          <a class="category-card category-purple" href="#courses">
+            <span class="category-icon" aria-hidden="true">⌘</span>
+            <span>Development</span>
+          </a>
+          <a class="category-card category-orange" href="#courses">
+            <span class="category-icon" aria-hidden="true">✳</span>
+            <span>Design</span>
+          </a>
+          <a class="category-card category-green" href="#courses">
+            <span class="category-icon" aria-hidden="true">↗</span>
+            <span>Business</span>
+          </a>
+          <a class="category-card category-blue" href="#courses">
+            <span class="category-icon" aria-hidden="true">◉</span>
+            <span>Marketing</span>
+          </a>
+          <a class="category-card category-pink" href="#courses">
+            <span class="category-icon" aria-hidden="true">♫</span>
+            <span>Music</span>
+          </a>
+          <a class="category-card category-yellow" href="#courses">
+            <span class="category-icon" aria-hidden="true">▤</span>
+            <span>IT &amp; Software</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="recommended-topics" class="section container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A little inspiration</p>
+            <h2>Topics recommended for you</h2>
+          </div>
+        </div>
+        <form class="topic-suggestion" action="#recommended-topics" method="get">
+          <label for="topic-input">What would you like to learn?</label>
+          <div class="topic-input-row">
+            <input
+              id="topic-input"
+              name="topic"
+              type="search"
+              list="topic-suggestions"
+              placeholder="Try Python, photography, or project management"
+            />
+            <datalist id="topic-suggestions">
+              <option value="Python"></option>
+              <option value="Web Development"></option>
+              <option value="Graphic Design"></option>
+              <option value="Data Science"></option>
+              <option value="Digital Marketing"></option>
+            </datalist>
+            <button type="submit">Suggest a topic</button>
+          </div>
+        </form>
+        <div class="recommended-topics">
+          <a class="topic-chip" href="#courses">Web Development</a>
+          <a class="topic-chip" href="#courses">Python</a>
+          <a class="topic-chip" href="#courses">JavaScript</a>
+          <a class="topic-chip" href="#courses">UX &amp; UI Design</a>
+          <a class="topic-chip" href="#courses">Data Science</a>
+          <a class="topic-chip" href="#courses">Digital Marketing</a>
+        </div>
+      </section>
+
+      <section class="section container featured-course-section" aria-labelledby="featured-course-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Learners love this course</p>
+            <h2 id="featured-course-title">Most popular course</h2>
+          </div>
+        </div>
+        <article class="featured-course">
+          <img src="images/web-development.svg" alt="Web development course illustration" />
+          <div class="featured-course-content">
+            <p class="course-category">Development</p>
+            <h3>The Complete Web Development Bootcamp</h3>
+            <p>Learn HTML, CSS, JavaScript, and build projects for your portfolio with instructor Alex Morgan.</p>
+            <p class="instructor">Alex Morgan · 28 hours · All levels</p>
+            <p class="rating"><strong>4.8</strong> <span aria-label="5 stars">★★★★★</span> <small>(12,480 ratings)</small></p>
+            <p class="price">$19.99 <del>$84.99</del></p>
+            <a class="button button-dark featured-course-button" href="#courses">View course</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="courses" class="section courses-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Recommended courses · sorted by learner rating</p>
+              <h2>Popular courses</h2>
+            </div>
+            <a class="text-link" href="#courses">View all courses <span aria-hidden="true">→</span></a>
+          </div>
+          <aside class="sale-banner">
+            <img src="images/sale.svg" alt="Sale: save up to 80 percent on selected courses" />
+            <div class="sale-copy">
+              <p class="eyebrow">Limited-time offer</p>
+              <h3>Big skills. Smaller prices.</h3>
+              <p>Save up to 80% on selected courses and start learning today.</p>
+              <a class="sale-link" href="#courses">Shop the sale <span aria-hidden="true">→</span></a>
+            </div>
+          </aside>
+          <div class="course-grid">
+            <article class="course-card">
+              <img src="images/business.svg" alt="Abstract business strategy illustration" />
+              <div class="course-content">
+                <p class="course-category">Business</p>
+                <h3>Business Strategy: From Idea to Action</h3>
+                <p class="instructor">Sam Rivera</p>
+                <p class="rating"><strong>4.9</strong> <span aria-label="5 stars">★★★★★</span> <small>(5,931 reviews)</small></p>
+                <p class="price">$21.99 <del>$89.99</del></p>
+              </div>
+            </article>
+            <article class="course-card">
+              <img src="images/web-development.svg" alt="Abstract web development illustration" />
+              <div class="course-content">
+                <p class="course-category">Development</p>
+                <h3>The Complete Web Development Bootcamp</h3>
+                <p class="instructor">Alex Morgan</p>
+                <p class="rating"><strong>4.8</strong> <span aria-label="5 stars">★★★★★</span> <small>(12,480 reviews)</small></p>
+                <p class="price">$19.99 <del>$84.99</del></p>
+              </div>
+            </article>
+            <article class="course-card">
+              <img src="images/design.svg" alt="Abstract graphic design illustration" />
+              <div class="course-content">
+                <p class="course-category">Design</p>
+                <h3>Graphic Design Masterclass: Learn by Doing</h3>
+                <p class="instructor">Jordan Lee</p>
+                <p class="rating"><strong>4.7</strong> <span aria-label="5 stars">★★★★★</span> <small>(8,206 reviews)</small></p>
+                <p class="price">$17.99 <del>$74.99</del></p>
+              </div>
+            </article>
+            <article class="course-card">
+              <img src="images/marketing.svg" alt="Abstract digital marketing illustration" />
+              <div class="course-content">
+                <p class="course-category">Marketing</p>
+                <h3>Digital Marketing: Grow Your Online Brand</h3>
+                <p class="instructor">Taylor Kim</p>
+                <p class="rating"><strong>4.6</strong> <span aria-label="5 stars">★★★★★</span> <small>(3,514 reviews)</small></p>
+                <p class="price">$16.99 <del>$69.99</del></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-columns">
+          <section class="footer-column">
+            <h2>Explore</h2>
+            <a href="#categories">Categories</a>
+            <a href="#recommended-topics">Recommended topics</a>
+            <a href="#courses">Popular courses</a>
+          </section>
+          <section class="footer-column">
+            <h2>Learn with Udemy</h2>
+            <a href="#categories">Teach on Udemy</a>
+            <a href="#courses">Udemy for Business</a>
+            <a href="#recommended-topics">Get the app</a>
+          </section>
+          <section class="footer-column">
+            <h2>About</h2>
+            <a href="#categories">About us</a>
+            <a href="#recommended-topics">Contact us</a>
+            <a href="#courses">Help and support</a>
+          </section>
+        </div>
+        <div class="footer-bottom">
+          <a class="logo" href="index.html">Udemy<span>.</span></a>
+          <p>&copy; 2026 Udemy Clone. For learning purposes.</p>
+          <a href="flex.html">Flexbox course page</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
